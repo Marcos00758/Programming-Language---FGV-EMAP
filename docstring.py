@@ -1,3 +1,5 @@
+import doctest
+
 def contar(a, b=2, c=3):
     print(a,b,c)
 
@@ -44,6 +46,6 @@ print(adicionar_musica(fila_musica, "   Tempos Modernos"))
 print(adicionar_musicas(fila_musica, "Roxo", "Azul", "Azul", "Amarelo"))
 print(adicionar_musica.__annotations__)
 
-
+doctest.testmod(verbose=True)
 
 
